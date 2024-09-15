@@ -15,6 +15,7 @@ def general_describe(df):
             "availability_365",
         ]
     ].describe()
+    print(airbnb_summary)
     return airbnb_summary
 
 
@@ -58,7 +59,7 @@ def plot_price_vs_reviews(df):
     plt.show()
 
 
-def generate_summary(df):
+def generate_profile(df):
     # Generate html report of dataset
     profile = ProfileReport(df, title="NYC Airbnb Data Profiling Report")
     profile.to_file("airbnb_profile.html")

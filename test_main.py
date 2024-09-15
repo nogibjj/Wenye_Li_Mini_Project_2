@@ -3,6 +3,7 @@ from main import (
     plot_price_histogram,
     plot_number_of_reviews_histogram,
     plot_price_vs_reviews,
+    generate_profile,
 )
 
 import pandas as pd
@@ -25,6 +26,10 @@ def test_plot_number_of_reviews_histogram():
 
 def test_plot_price_vs_reviews():
     output = plot_price_vs_reviews(airbnb_df)
+
+
+def test_generate_profile():
+    output = generate_profile(airbnb_df)
 
 
 if __name__ == "__main__":
